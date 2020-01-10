@@ -1,0 +1,19 @@
+- name: Home
+  path: "#top"
+  section_id: home
+
+- name: My Lessons
+  path: /blog/
+  section_id: blog
+
+- name: Reviews
+  path: "#reviews"
+  section_id: reviews
+
+- name: Practice Exams
+  path: "#Practice-Exams"
+  section_id: Practice-Exams
+
+- name: Contact
+  path: "#contact"
+  section_id: contact

@@ -1,0 +1,233 @@
+---
+layout: default
+onepage: true
+
+team_slides:
+  - /assets/images/Slide Show/Everet-with-parents.jpg
+  - /assets/images/Slide Show/Mason-slide-show.jpg
+  - /assets/images/Slide Show/Tudor-slide-show.jpg
+  - /assets/images/Slide Show/Charlise-slide-show.jpg
+  - /assets/images/Slide Show/Sean-slide-show.jpg
+
+testimonials:
+  - quote: "Adam was my math 30-1 tutor, he helped me a ton! He made the hard concepts easy to understand and helped me break my old learning habits. Couldn't have done it without him. Definitely would recommend!"
+    author:
+      name: "Carol Kemal"
+
+      position: 'Math 30-1 student'
+  - quote: "Adam is the best math tutor you can find anywhere, he taught my kid the whole of grade 10C AP within 3 weeks and he excelled in his exam. No doubt the best tutor in Calgary!"
+    author:
+      name: "Yulia Gorbach"
+      position: 'Mom of Gr.10 student'
+  - quote: "Very helpful in learning especially when extra curricular actives take up lots of school time making math hard to learn quickly. Adam has been able to allow me to excel in and out of school through his excellent teaching and test taking guidance."
+    author:
+      name: "Thomas Burnyeat"
+      position: 'Math 30-2 student'
+  - quote: "Adam is an excellent math tutor to my daughter.  He has a no nonsense, positive and confident approach to tutoring, and his ability to impart knowledge and understanding to someone who finds math really difficult has been amazing.   Thank you, Adam!"
+    author:
+      name: "Alison Rose"
+      position: 'Mom of gr. 10 student'
+  - quote: "Adam is an excellent math tutor.  He helped our son George navigate the difficult math 30.  Before Adam he was struggling to understand the concepts but with Adam he actually ended up understanding, liking math and doing very well.  We would highly recommend him."
+    author:
+      name: "Elna Achilleos"
+      position: 'Mom of gr. 12 stud'
+  - quote: "Adam has been my math tutor since August of 2018, and he has been awesome! During our sessions he not only will work through each question, he will explain each step of the question to help better your understanding in that topic.. He has given me many test writing skills that I still use on any sort of test that I do, and I would definitely recommend him to anyone struggling with any level of math."
+    author:
+      name: "Mason Molyneaux"
+      position: 'Math 30 student'
+
+clients:
+  - /assets/images/My Brilliant Students/Kellen-small.png
+  - /assets/images/My Brilliant Students/Adam and Danielle-small.png
+  - /assets/images/My Brilliant Students/Naomi 1-small.png
+  - /assets/images/My Brilliant Students/Sedrica 4-small.png
+
+  - /assets/images/My Brilliant Students/Tudor 5-small.png
+  - /assets/images/My Brilliant Students/Nicola-small.png
+  - /assets/images/My Brilliant Students/Sean-small.png
+  - /assets/images/My Brilliant Students/Zac1-healed-small.png
+
+  - /assets/images/My Brilliant Students/Mason-small.png
+  - /assets/images/My Brilliant Students/Caleb-small.png
+  - /assets/images/My Brilliant Students/Adam and Brady-small.png
+  - /assets/images/My Brilliant Students/Annika-small.png
+
+---
+
+<div class='full no-padding parallax home-video-wrapper'>
+  <div class='fullscreen'>
+    <video autoplay='autoplay' id='fullscreen-video' loop='loop'>
+      <source src='{{ "/assets/images/Tutoring Video.mp4" | relative_url }}' type='video/mp4'>
+    </video>
+    <div class='overlay'></div>
+    <div class='layer'>
+      <p class="small-title">Get the best help </p>
+      <h1 class='thin' id="to-be-update">
+         <span class="fir">Level Up</span><br/>
+         <span class="sec">Math</span><br/>
+         <span class="thir">Tutoring</span>
+      </h1>
+      <h2 class='thin'>
+       Hi, I'm Adam and I've been professionally teaching Math and Physics full-time since 2008. I've prepared hundreds of students for success on their diploma exams—an exam that I achieved 100% on.
+       <a href='#reviews'>See my reviews</a>
+      </h2>
+    </div>
+  </div>
+</div>
+
+
+<a id='about'></a>
+<div class='full'>
+  <div class='row'>
+    <div class='large-8 columns large-centered'>
+      <div class="section-title">
+        <p class="small-title">A personal touch</p>
+        <h3>
+          I provide one-on-one individualized instruction.
+        </h3>
+        <p class="big-size">Everyone has unique challenges and ways of thinking. What works well for one person may not work for another. I guarantee I will find a way that will work just for you.</p>
+
+        <img src="{{ "" | relative_url }}" alt="">
+      </div>
+    </div>
+    <div class="four spacing"></div>
+  </div>
+</div>
+
+<div class="full no-overflow no-padding parallax" style="background-image: url({{ "/assets/images/Nicola-6.jpg" | relative_url }})">
+  <div class="right-half">
+    <div class="two spacing"></div>
+    <div class="section-header alt white">
+      <h2>Experienced, caring instruction</h2>
+    </div>
+    <p class="light">I have a passion for giving young people the skills they need to succeed. High school is stressful, difficult, and causes many students anxiety, but learning should be rewarding and enjoyable! I am here to make it so.</p>
+    <p class="light">Start by coming for just one class and let me light your path to mathematical success with caring, face to face instruction.</p>
+    <div class="two spacing"></div>
+    <a href="#contact" class="button small">Book now</a>
+    <div class="three spacing"></div>
+  </div>
+</div>
+
+<a id='blog'></a>
+<div class='full grey'>
+  <div class='row'>
+    <div class='large-8 columns large-centered'>
+      {% include section-title.html small_title="latest posts" title="My Lessons" %}
+    </div>
+  </div>
+</div>
+<div class="full grey no-padding no-overflow">
+  {% for post in site.posts limit:3 %}
+    <div class='large-4 columns'>
+      <div class='mod modBlogPost simple'>
+        <div class='content'>
+          <p class='date'>{{ post.date | date: "%B %d, %Y" }}</p>
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <div class='spacing'></div>
+          <p>
+            <a class='button boxed yellow tiny' href='{{ post.url | relative_url }}'>Read more</a>
+          </p>
+        </div>
+      </div>
+      <div class="four spacing"></div>
+    </div>
+  {% endfor %}
+</div>
+
+<a id='reviews'></a>
+<div class='full no-overflow no-padding parallax' style="background-image: url({{ "/assets/images/Sedrica 3 modified3.jpg" | relative_url }})">
+  <div class="left-half">
+    <div class="two spacing"></div>
+    <div class="row">
+      <div class="section-header alt white">
+        <h2>What my students say</h2>
+      </div>
+      <div class='mod modTestimonials simple'>
+        <div class='row'>
+          <div class='small-12 columns'>
+            <div class='items'>
+              {% for t in page.testimonials %}
+                <div class='item'>
+                  <p class='quote'>{{ t.quote }}</p>
+                  <div class="two spacing"></div>
+                  <div class='author'>
+                    <p class='author-avatar'>
+                      <img width="80" height="80" alt="" src="{{ t.author.avatar | relative_url }}" />
+                    </p>
+                    <p class='author-name'>
+                      -
+                      <strong>{{ t.author.name }}</strong>
+                      {%- if t.author.position %}, {{ t.author.position }}{% endif %}
+                    </p>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<a id='My-Brilliant-Students'></a>
+<div class='full'>
+  <div class='row'>
+    <div class='large-8 columns large-centered'>
+      {% include section-title.html small_title="What a fine looking bunch!" title="My Brilliant Students" %}
+    </div>
+  </div>
+</div>
+<div class="full no-padding">
+  <div class="clients">
+    <div class='row'>
+      {% for client in page.clients %}
+        <div class='large-3 medium-6 small-6 columns'>
+          <div class="client">
+            <a href="javascript:void(0)"><img alt="" src="{{ client | relative_url }}" /></a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="four spacing"></div>
+</div>
+
+<a id='Practice-Exams'></a>
+<div class='full dark no-padding '>
+  <div class="four spacing"></div>
+  <div class='row'>
+    <div class='large-8 columns'>
+      <h3 class="white">Find practice exams</h3>
+      <p>
+        Textbook questions are often too easy for exam prep. Sink your teeth into these bad boys!
+      </p>
+    </div>
+    <div class='large-4 columns'>
+      <p>
+        <a class='button small boxed' href="/2020/01/06/How-to-properly-exam-prep.html#math-30-1">Download Now</a>
+      </p>
+    </div>
+  </div>
+  <div class='two spacing'></div>
+</div>
+
+<a id='slide-show'></a>
+<div class="two spacing"></div>
+<div class="full no-padding">
+  <div class='mod modBoxedSlider' data-timeout='1500'>
+    <div class='slides'>
+      {% for image in page.team_slides %}
+        <div class='slide'>
+          <img width="1200" height="800" alt="" src="{{ image | relative_url }}" />
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+<a id='contact'></a>
+{% include contact-form.html %}
+
+{% include social-networks.html %}
