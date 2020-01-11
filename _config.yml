@@ -21,8 +21,8 @@ email: xzbdlqqo
 description: > # this means to ignore newlines until "baseurl:"
   A Calgary Math and Physics Tutoring company focused on relatability, success, and confidence.
   One on one Private Tutoring.
-baseurl: ""  # the subpath of your site, e.g. /blog
-url: "https://www.levelupmath.ca"  # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/levelupmath.ca"  # the subpath of your site, e.g. /blog
+url: "http://neilmayhew.github.io"  # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
