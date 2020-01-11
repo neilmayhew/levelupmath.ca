@@ -22,7 +22,7 @@ description: > # this means to ignore newlines until "baseurl:"
   A Calgary Math and Physics Tutoring company focused on relatability, success, and confidence.
   One on one Private Tutoring. Professional online math tutoring with webcam using Skype, Zoom, Discord, or Facebook.
 baseurl: ""  # the subpath of your site, e.g. /blog
-url: "https://www.levelupmath.ca"  # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://levelupmath.neil.mayhew.name"  # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
